@@ -1,0 +1,14 @@
+// 1
+// 6
+// 3
+// 10
+public int main () {
+  a = 0;
+  b = a + 2 * ({a=1; b=2;} a + b);
+  putint(a);
+  putint(b);
+  c = 0;
+  d = 2 * ({c=3; d=2;} c + d) + a / b;
+  putint(c);
+  putint(d);
+}

@@ -1,0 +1,13 @@
+// 8
+// 8
+// 7
+// 80
+// 20
+public int main() {
+  a = 5 + 3;
+  putint(a);
+  b = ({putint(a, a - 1);} 10 * a);
+  putint(b);
+  c = ({a = 10; b = 2;} a * b);
+  putint(c);
+}

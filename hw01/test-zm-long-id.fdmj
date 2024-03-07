@@ -1,0 +1,6 @@
+public int main () {
+  abcdefghsdfsfsdfssdfsdf = 0;
+  abcdefghsdfsfsdfssdfsdfsdfsfsdfsfsfsfffffffffffffsdfsf = 1;
+  putint(abcdefghsdfsfsdfssdfsdf);
+  putint(abcdefghsdfsfsdfssdfsdfsdfsfsdfsfsfsfffffffffffffsdfsf);
+}

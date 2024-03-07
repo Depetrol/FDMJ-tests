@@ -1,0 +1,16 @@
+// 1
+// -1
+// 0
+// 0
+// 128
+public int main() {
+  a = 1;
+  b = -a;
+  putint(a, b);
+  c = -b - a;
+  putint(c);
+  d = 0;
+  putint(-d);
+  e = -128;
+  putint(-e);
+}
