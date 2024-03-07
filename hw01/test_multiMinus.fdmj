@@ -1,0 +1,20 @@
+public int main() {
+    a = ---12345;
+    a = ({ 
+        putint(a); 
+        putint( ---({
+            c = -a * (a + 10000); 
+            a = 50; 
+        } c ));
+    } a + 3 );
+    c = a + ({ 
+        b = 3; 
+        a = 40; 
+        putint( ({ 
+            a = a - --3; 
+            b = b / 2; 
+        } b ), a + 5); 
+    } b );
+    putch(------100);
+    putint(a, ({ putint(a - b); } c));
+}
