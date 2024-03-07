@@ -1,0 +1,14 @@
+// 102 51 52 54 17
+public int main () {
+  a = 1;
+  b = 10;
+  c = 100;
+  d = ({b = c + 1; a = b - 2;} a / 2);
+  a = b + 1;
+  b = c + 2;
+  c = d + 3;
+  e = ({d = c + 2; b = d - 3;} b / 3);
+  putint(a, b);
+  putint(c, d);
+  putint(e);
+}

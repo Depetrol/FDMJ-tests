@@ -1,0 +1,11 @@
+// 0 1 2 50
+public int main () {
+  putch(48);
+  putch(10);
+  putch(49);
+  putch(10);
+  a = 50;
+  putch(a);
+  putch(10);
+  putint(a);
+}

@@ -1,0 +1,9 @@
+// 3 .141 5926
+public int main () {
+  putch(({putint(3);a=48;b=10;}a-2));
+  putch(a+1);
+  putch(({putch(a+4);putint(a-47);putch(a+5);a=50;}a+7));
+  putch(a);
+  putch(a+4);
+  putch(b);
+}

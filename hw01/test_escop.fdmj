@@ -1,0 +1,6 @@
+// 12 8 5 9 8 90
+public int main () {
+  a = ({putint(12, ({putint(8); b = 5;} b)); b = 8;} b+1);
+  b = ({putint(a, a-1);} 10*a);
+  putint(b);
+}

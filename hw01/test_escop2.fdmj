@@ -1,0 +1,5 @@
+// 1 2 4 6 3
+public int main () {
+  a = ({putint(({putint(({putint(1);b=1;}b*2));b=b+1;}b*2));b=b+1;}b*2);
+  putint(a, b);
+}
