@@ -2,3 +2,5 @@
 **.xml
 **.ll.ll
 **.output
+.DS_Store
+**/gen_program_*
