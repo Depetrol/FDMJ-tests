@@ -1,0 +1,5 @@
+public int main () {
+  a = 10;
+  b = ({putint(a); putint(a-1);} 10*a);
+  putint(b);
+}

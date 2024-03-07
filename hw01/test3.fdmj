@@ -1,0 +1,8 @@
+public int main() {
+    a=5;
+    b=a+22;
+    putint(a);
+    putint(b);
+    d=a*2-b/3;
+    putint(d);
+}

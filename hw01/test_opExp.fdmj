@@ -1,0 +1,10 @@
+public int main() {
+    a=1 + 2;
+    putint(a);
+    b=4 - 3;
+    putint(b);
+    c=5*6;
+    putint(c);
+    d=8 / 2;
+    putint(d);
+}

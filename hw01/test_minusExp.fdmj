@@ -1,0 +1,7 @@
+public int main () {
+  a = 10;
+  b = 20;
+  c = - (a+b);
+  putint(b);
+  putint(c);
+}
