@@ -2,6 +2,12 @@
 
 保持源代码仓库和测试仓库在同一级
 
+在该仓库下hw03_04 目录下 创建yours和correct文件夹
+
+```makefile
+$ mkdir yours correct
+```
+
 在源代码仓库2024/hw3_4/Makefile中添加
 
 ```makefile
@@ -44,7 +50,7 @@ test-external: clean-external
 
 ```
 
-运行
+并在该目录下运行
 
 ```shell
 $ make test-external
