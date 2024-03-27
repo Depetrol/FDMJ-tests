@@ -2,6 +2,8 @@
 **.xml
 **.ll.ll
 **.output
+*.ast
+*.src
 .DS_Store
 **/gen_program_*
 bin
