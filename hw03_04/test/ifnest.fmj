@@ -1,0 +1,7 @@
+public int main() {
+    int i = 0;
+    if (i == 0) 
+        if (i == 1) i = 7;
+            else if (i == 2)
+                i = 3;
+}
