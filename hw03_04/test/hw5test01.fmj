@@ -1,0 +1,8 @@
+public int main() {
+    int[] a = {0.1};
+    float[] b = {6, 3, 0, 5, 9, 1, 2, 1.2345};
+    float j = 0.3;
+    a=-1;
+    putnum(a+b+1);
+    return a*3+2;
+}
