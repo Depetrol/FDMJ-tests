@@ -23,11 +23,14 @@ for file in matching_files:
     file_contents = file_contents.replace("\r\n", "\n")
     correct_file_contents = read_file_contents(correct_file)
     correct_file_contents = correct_file_contents.replace("\r\n", "\n")
-    are_same = file_contents == correct_file_contents
-    if are_same: 
+    
+    diff_lines = [i for i in range(len(file_contents)) if file_contents[i] != correct_file_contents[i]]
+    
+    if not diff_lines: 
         print("== passed {} ==".format(file.split('/')[2]))
     else:
         print("!! failed {} !!".format(file.split('/')[2]))
+        print("Different lines: ", diff_lines)
         pass_all = False
 if pass_all:
     print("===== Passed All Tests =====")
