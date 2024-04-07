@@ -36,7 +36,7 @@ test_external: clean build clean_external
 			$(ASTCHECK) "$${file%%.*}" &> "../correct/$${file%%.*}".txt; \
 		fi \
 	done; \
-	python3 ../bin/check.py;\
+	python3 ../check.py;\
 	cd $(CURDIR)
 ```
 
