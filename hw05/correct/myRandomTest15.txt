@@ -1,0 +1,1 @@
+(line:9 col:29) Must assign to a left array value!

@@ -1,0 +1,9 @@
+public int main() {
+    int i=0; 
+    float[] a; 
+
+    a=new float[8];
+    while (({a[i]=i; i=i+1;} i)<8);
+    putarray(8,a[0]);
+    return a[7];
+}
