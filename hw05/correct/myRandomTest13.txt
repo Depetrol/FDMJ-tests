@@ -1,1 +1,0 @@
-(line:10 col:3) Must assign to a left value!

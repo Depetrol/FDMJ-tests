@@ -10,6 +10,7 @@ def read_file_contents(filename):
 matching_files = glob.glob('./yours/*.txt')
 
 pass_all = True
+passed_prints = []
 print("===== Start Tests =====")
 for file in matching_files:
     correct_file = os.path.join('./correct', os.path.basename(file))
@@ -25,11 +26,14 @@ for file in matching_files:
             print("Different number of lines, though existing lines are the same.")
             pass_all = False
         else:
-            print("== passed {} ==".format(file.split('/')[2]))
+            passed_prints.append("== passed {} ==".format(file.split('/')[2]))
     else:
         print("!! failed {} !!".format(file.split('/')[2]))
         print("different line: ", diff_lines)
         pass_all = False
+
+for passed_print in passed_prints:
+    print(passed_print)
 
 if pass_all:
     print("===== Passed All Tests =====")

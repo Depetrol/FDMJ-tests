@@ -1,1 +1,0 @@
-(line:14 col:10) ArrayExp should start with a left array value!

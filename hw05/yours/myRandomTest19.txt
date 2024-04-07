@@ -1,1 +1,0 @@
-(line:10 col:2) Continue and break must be inside a loop

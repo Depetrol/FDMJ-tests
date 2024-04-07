@@ -1,1 +1,0 @@
-(line:9 col:29) Left side of array init must be a location for an array type

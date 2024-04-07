@@ -1,1 +1,0 @@
-(line:11 col:7) Type mismatch in assignment, can't assign value to pointer
