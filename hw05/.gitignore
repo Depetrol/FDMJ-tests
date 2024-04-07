@@ -1,2 +1,5 @@
 yours/*.txt
 correct/*.txt
+test/myRadomTest*.txt
+tools/main
+tools/std
