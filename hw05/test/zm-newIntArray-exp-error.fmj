@@ -1,0 +1,6 @@
+public int main() {
+  int[] n;
+  int[] n2;
+  n = new int[n2];
+  return n[0];
+}

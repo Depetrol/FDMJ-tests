@@ -1,0 +1,8 @@
+public int main() {
+    int[] n;
+    n = new int[3];
+    if (n) { // error
+        
+    }
+    return n;
+}

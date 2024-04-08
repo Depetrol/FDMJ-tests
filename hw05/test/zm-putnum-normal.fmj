@@ -1,0 +1,5 @@
+public int main() {
+    int n = 2;
+    putnum(n);
+    return n;
+}

@@ -1,0 +1,8 @@
+// no errors
+public int main() {
+    int n = 2;
+    while (n >= 0)
+      while (n >= 0)
+        if (n <= 8) break;
+    return n;
+}

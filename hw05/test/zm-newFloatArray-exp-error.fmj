@@ -1,0 +1,6 @@
+public int main() {
+  float [] n;
+  float [] n2;
+  n = new float[n2]; // error
+  return n[0];
+}

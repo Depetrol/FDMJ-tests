@@ -1,0 +1,8 @@
+public int main() {
+    int[] n;
+    int ret;
+    n = new int[3];
+    ret = 3;
+    putch(n); // error
+    return ret;
+}
