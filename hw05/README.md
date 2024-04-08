@@ -4,12 +4,48 @@
 
 ### hw05
 
-见hw5的[README](./hw05/README.md)文件
+- 可能需要手动修改FDMJ主仓库中 `hw5/vendor/tools/astcheck` 的权限
+- 本仓库的 `check.py` 会对输出进行严格检查，可以自行修改
 
-### hw3_4
+```makefile
+TEST_EXTERNAL_DIR=../../FDMJ-tests
+TEXT_EXTERNAL_HW=hw05
+TESTFILE_EXTERNAL_DIR=$(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/test
+TEST_EXTERNAL_BIN=$(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/bin
+clean_external: 
+	@$(RM) $(TESTFILE_EXTERNAL_DIR)/bin
+	@$(RM) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/yours
+	@$(RM) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/correct
+	@$(RM) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/tools
+	@find $(TESTFILE_EXTERNAL_DIR) -type f \( \
+		-name "*.txt" -o -name "*.ast" -o -name "*.src" -o -name "*.xml" -o -name "*.output" -o -name "gen_program_*" \
+		\) -exec $(RM) {} \;
 
-见hw3_4的[README](./hw03_04/README.md)文件
+SHELL:=/bin/bash
 
+test_external: clean build clean_external
+	@mkdir -p $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/tools; 
+	@mkdir -p $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/yours; 
+	@mkdir -p $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/correct; 
+	@cp $(MAIN_EXE) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/tools/main;
+	@cp $(ASTCHECK) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/tools/std;
+
+	@cd $(TESTFILE_EXTERNAL_DIR);pwd;\
+	# python3 randomCodeGen_v2.py;\
+	for file in $$(ls .); do \
+		if [ "$${file##*.}" = "fmj" ]; then \
+			echo "[$${file%%.*}]"; \
+			echo "running fmj to ast code...";\
+			$(FMJ2AST) "$${file%%.*}";\
+			echo "running your code...";\
+			$(MAIN_EXE) "$${file%%.*}" &> "../yours/$${file%%.*}".txt; \
+			echo "running standard code...";\
+			$(ASTCHECK) "$${file%%.*}" &> "../correct/$${file%%.*}".txt; \
+		fi \
+	done; \
+	python3 ../check.py;\
+	cd $(CURDIR)
+```
 ### hw1
 
 * 将本仓库置于与FDMJ主仓库 `2024`平级的文件夹内
