@@ -11,6 +11,7 @@ matching_files = glob.glob('./yours/*.txt')
 
 pass_all = True
 passed_prints = []
+failed_prints = []
 print("===== Start Tests =====")
 for file in matching_files:
     correct_file = os.path.join('./correct', os.path.basename(file))
@@ -20,22 +21,26 @@ for file in matching_files:
     min_len = min(len(file_contents), len(correct_file_contents))
     diff_lines = [i + 1 for i in range(min_len) if file_contents[i] != correct_file_contents[i]]
     
+    failed_msg = ""
     if not diff_lines: 
         if len(file_contents) != len(correct_file_contents):
-            print("!! failed {} !!".format(file.split('/')[2]))
-            print("Different number of lines, though existing lines are the same.")
+            failed_msg = "!! failed {} !!".format(file.split('/')[2]) + "\n\t" + "Different number of lines, though existing lines are the same."
             pass_all = False
         else:
             passed_prints.append("== passed {} ==".format(file.split('/')[2]))
     else:
-        print("!! failed {} !!".format(file.split('/')[2]))
-        print("different line: ", diff_lines)
+        failed_msg = "!! failed {} !!".format(file.split('/')[2]) + "\n\t" + "different line: " + str(diff_lines)
         pass_all = False
-
-for passed_print in passed_prints:
-    print(passed_print)
+    if failed_msg != "":
+        failed_prints.append(failed_msg)
 
 if pass_all:
+    for passed_print in passed_prints:
+        print(passed_print)
     print("===== Passed All Tests =====")
 else:
+    # 将 failed_prints按照名称排序后打印
+    failed_prints.sort()
+    for failed_print in failed_prints:
+        print(failed_print)
     print("!!!!! Some Tests Failed !!!!!")
