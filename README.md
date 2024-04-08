@@ -2,7 +2,10 @@
 
 ## 自动运行Test（推荐）
 
-*	hw05
+### hw05
+
+可能需要手动修改astcheck的权限
+
 ```makefile
 TEST_EXTERNAL_DIR=../../FDMJ-tests
 TEXT_EXTERNAL_HW=hw05
@@ -10,6 +13,9 @@ TESTFILE_EXTERNAL_DIR=$(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/test
 TEST_EXTERNAL_BIN=$(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/bin
 clean_external: 
 	@$(RM) $(TESTFILE_EXTERNAL_DIR)/bin
+	@$(RM) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/yours
+	@$(RM) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/correct
+	@$(RM) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/tools
 	@find $(TESTFILE_EXTERNAL_DIR) -type f \( \
 		-name "*.txt" -o -name "*.ast" -o -name "*.src" -o -name "*.xml" -o -name "*.output" -o -name "gen_program_*" \
 		\) -exec $(RM) {} \;
@@ -24,7 +30,7 @@ test_external: clean build clean_external
 	@cp $(ASTCHECK) $(TEST_EXTERNAL_DIR)/$(TEXT_EXTERNAL_HW)/tools/std;
 
 	@cd $(TESTFILE_EXTERNAL_DIR);pwd;\
-	python3 randomCodeGen_v2.py;\
+	# python3 randomCodeGen_v2.py;\
 	for file in $$(ls .); do \
 		if [ "$${file##*.}" = "fmj" ]; then \
 			echo "[$${file%%.*}]"; \
@@ -39,6 +45,7 @@ test_external: clean build clean_external
 	python3 ../check.py;\
 	cd $(CURDIR)
 ```
+### hw1
 
 * 将本仓库置于与FDMJ主仓库 `2024`平级的文件夹内
 * 在FDMJ主仓库Makefile加入下面的命令
