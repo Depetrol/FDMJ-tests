@@ -1,0 +1,10 @@
+public int main() {
+  int[] n;
+  int[] n2;
+  int a=0;
+  int b=1;
+  n[] = {a, b};
+  b = n[a];
+  n[b] = n[a];
+  return n[0];
+}

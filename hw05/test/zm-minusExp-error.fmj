@@ -1,0 +1,6 @@
+public int main() {
+    int a = 3;
+    int [] arr;
+    a = -arr; // error
+    return a;
+}

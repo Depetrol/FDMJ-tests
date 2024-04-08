@@ -1,0 +1,8 @@
+public int main() {
+    int[] a;
+    int n = 2;
+    a = new int[2];
+    putarray(2, a);
+    putarray(a, a); // error
+    return n;
+}
