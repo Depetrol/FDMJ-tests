@@ -1,1 +1,0 @@
-(line:10 col:3) Left side of assignment must be a location

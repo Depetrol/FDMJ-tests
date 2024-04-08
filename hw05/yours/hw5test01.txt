@@ -1,1 +1,0 @@
-(line:6 col:12) Operands of binary operation must be int or float

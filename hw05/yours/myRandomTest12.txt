@@ -1,1 +1,0 @@
-(line:21 col:29) Getarray must be applied to an array

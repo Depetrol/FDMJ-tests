@@ -1,1 +1,0 @@
-(line:21 col:29) Getarray should have an array value!
