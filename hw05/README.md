@@ -5,7 +5,9 @@
 ### hw05
 
 - 可能需要手动修改FDMJ主仓库中 `hw5/vendor/tools/astcheck` 的权限
-- 本仓库的 `check.py` 会对输出进行严格检查，可以自行修改
+- 关于结果校对：
+	- 本仓库的 `check.py` 会对输出进行严格检查
+	- 本仓库的 `check_errLine.py` 只会检查行号
 
 ```makefile
 TEST_EXTERNAL_DIR=../../FDMJ-tests
