@@ -1,0 +1,4 @@
+public int main() {
+  int r = 1;
+  while(({r=2; putnum(r); break;} r));
+}

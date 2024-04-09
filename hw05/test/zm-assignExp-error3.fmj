@@ -1,0 +1,7 @@
+public int main() {
+  float [] n;
+  float float_num;
+  float_num = 3.4;
+  n = float_num;
+  return n[0];
+}

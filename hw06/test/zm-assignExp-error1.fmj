@@ -5,8 +5,8 @@ public int main() {
   int a = 4;
   float b;
   b = 3.4;
-  n = new float[3];
-  n2 = new float[a];
-  n3 = new float[b];
+  n = new int[3];
+  n2 = new int[a];
+  n3 = new int[b];
   return n[0];
 }

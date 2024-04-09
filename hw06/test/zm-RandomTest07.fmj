@@ -1,0 +1,16 @@
+public int main ( ) { 
+ int [ ] aaYJ = { 27496 , 77456 , 22541 , 8821 , - 53490 , 11547  } ; 
+ float mrDwid4sHhI = 80977 ; 
+  (( { putnum ( (length ( (( (IS0lNI) )) )) ) ; 
+ continue ; 
+ if ( (! (getnum ( ))) ) 
+ break ; 
+ putch ( (getnum ( )) ) ; 
+ putch ( (LWu7001jL) ) ; 
+  } (getarray ( (getnum ( )) )) )) = (- (false)) ; 
+ (getarray ( (a5luw_50DO) )) [ ] = { (getnum ( ))  } ; 
+ break ; 
+ putch ( (getnum ( )) ) ; 
+  
+ } 
+ 
