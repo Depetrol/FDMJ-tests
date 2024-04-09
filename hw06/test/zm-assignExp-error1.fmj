@@ -1,0 +1,12 @@
+public int main() {
+  float [] n;
+  float [] n2;
+  float [] n3;
+  int a = 4;
+  float b;
+  b = 3.4;
+  n = new int[3];
+  n2 = new int[a];
+  n3 = new int[b];
+  return n[0];
+}

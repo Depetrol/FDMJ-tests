@@ -1,0 +1,16 @@
+public int main(){
+    int r = 1;
+    while(({r=2; putnum(r); break;} r)){ // error
+
+    }
+    return 1;
+}
+
+/**
+public int main(){
+    int r = 1;
+    r = 2; putnum(r); break;
+    while(r) {}
+    return 1;
+}
+*/

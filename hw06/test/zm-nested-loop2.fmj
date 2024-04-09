@@ -1,0 +1,10 @@
+// no errors
+public int main() {
+    int n = 2;
+    while (n >= 0)
+      while (n >= 0) {
+        n = n - 1;
+        if (n <= 8) continue;
+      }
+    return n;
+}

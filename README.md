@@ -2,13 +2,11 @@
 
 ## 自动运行Test（推荐）
 
-### hw05
-
-见hw5的[README](./hw05/README.md)文件
-
-### hw3_4
-
-见hw3_4的[README](./hw03_04/README.md)文件
+| hw | 运行方式 |
+| --- | --- |
+| hw06 | [README](./hw06/README.md) |
+| hw05 | [README](./hw05/README.md) |
+| hw05 | [README](./hw03_04/README.md) |
 
 ### hw1
 
