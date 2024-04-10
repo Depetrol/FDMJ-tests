@@ -1,0 +1,13 @@
+public int main() { }
+
+public class C0  {
+    public int id(){
+        return new int[3];
+    }
+}
+
+public class C1 extends C0{
+    public float[] id(){ // error Mismatch return type!
+        return new float[3];
+    }
+}
