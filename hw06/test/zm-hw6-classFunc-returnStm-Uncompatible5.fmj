@@ -1,0 +1,8 @@
+public int main() { }
+
+public class C0  {
+    public float id(){
+        return new float[3]; // Error: Uncompatible types
+    }
+}
+

@@ -1,0 +1,11 @@
+public int main() { }
+
+public class C0  {
+    public class C0 id(){
+        return new C1(); // norlmal
+    }
+}
+
+public class C1 extends C0 {
+
+}
