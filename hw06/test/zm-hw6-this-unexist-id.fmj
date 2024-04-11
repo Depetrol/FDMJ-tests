@@ -1,0 +1,12 @@
+public int main() {
+}
+
+public class c1 {
+    int[] i1={2, 3};
+
+    public int m1(int x) {
+        this.i2[1]=x;  // error
+        return this.i1[0];
+    }
+}
+

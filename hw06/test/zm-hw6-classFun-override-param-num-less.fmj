@@ -1,0 +1,13 @@
+public int main() { }
+
+public class C0  {
+    public class C0 id(int a, float b, float [] c, float [] d, class C0 e, class C1 f){
+        return new C0();
+    }
+}
+
+public class C1 extends C0{
+    public class C0 id(int a, float b){ //error
+        return new C0();
+    }
+}

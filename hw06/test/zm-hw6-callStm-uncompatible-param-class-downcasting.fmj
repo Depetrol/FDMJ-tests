@@ -1,8 +1,8 @@
 public int main() { 
     class C0 c;
     class C1 c1;
-    c = new C0();
     int i = 0;
+    c = new C0();
     c.id2(new C1(), i);
     c.id2(new C0(), 1); // error downcasting
     return 0;
