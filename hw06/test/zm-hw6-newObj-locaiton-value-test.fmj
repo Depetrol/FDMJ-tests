@@ -1,0 +1,7 @@
+public int main() {
+    new C0() = 12; // error Must assign to a left value!
+    return 0;
+}
+
+public class C0 {
+}

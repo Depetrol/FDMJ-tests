@@ -1,0 +1,19 @@
+public int main() { }
+
+public class C0 {
+    int id;
+    float id; // error
+    int[] id;
+    float[] id;
+    class c1 id;
+
+    public int id(){
+        return 0;
+    }
+
+    public int id2(){
+        return 0;
+    }
+}
+
+public class c1 {}
