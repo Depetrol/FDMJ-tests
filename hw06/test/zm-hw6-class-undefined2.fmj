@@ -1,0 +1,17 @@
+public int main() { }
+
+public class C0  {
+    class C1 id; // implicit declaration
+    class C2 id2; // error
+    public class C0 id(){
+        return new C0();
+    }
+}
+
+public class C1 {
+    public class C1 id(){ 
+        return new C1();
+    }
+}
+
+
