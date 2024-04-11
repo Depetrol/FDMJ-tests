@@ -1,0 +1,13 @@
+public int main() { }
+
+public class C0  {
+    public int id(){
+        return 0;
+    }
+}
+
+public class C1 extends C0{
+    public class C0 id(){ // error Mismatch return type!
+        return new C0();
+    }
+}

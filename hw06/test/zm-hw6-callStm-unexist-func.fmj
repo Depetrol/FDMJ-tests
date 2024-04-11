@@ -1,0 +1,14 @@
+public int main() { 
+    class C0 c;
+    c = new C0();
+    c.id3(1, 2); // error
+    return 0;
+}
+
+public class C0 {
+    int id;
+
+    public int id2(int a, int b){
+        return 0;
+    }
+}

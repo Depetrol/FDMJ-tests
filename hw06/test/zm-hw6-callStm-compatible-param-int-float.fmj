@@ -1,0 +1,17 @@
+public int main() { 
+    class C0 c;
+    int i = 0;
+    float f = 1;
+    c = new C0();
+    c.id2(i, f);
+    c.id2(f, i); // normal int <-> float
+    return 0;
+}
+
+public class C0 {
+    int id;
+
+    public int id2(int a, float b){
+        return 0;
+    }
+}

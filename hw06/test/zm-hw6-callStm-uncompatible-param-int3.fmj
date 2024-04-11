@@ -1,0 +1,15 @@
+public int main() { 
+    class C0 c;
+    c = new C0();
+    c.id2(1, 2);
+    c.id2(c, 2); // error： int <-> class
+    return 0;
+}
+
+public class C0 {
+    int id;
+
+    public int id2(int a, int b){
+        return 0;
+    }
+}
