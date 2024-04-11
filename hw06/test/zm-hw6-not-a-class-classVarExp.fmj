@@ -1,0 +1,15 @@
+public int main() { 
+    class C0 c;
+    int a;
+    int b;
+    b = a.id; // error
+    return 0;
+}
+
+public class C0 {
+    int id;
+
+    public int func(int a, int b, int c){
+        return 0;
+    }
+}
