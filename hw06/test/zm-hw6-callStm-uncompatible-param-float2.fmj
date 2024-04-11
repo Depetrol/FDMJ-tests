@@ -1,0 +1,17 @@
+public int main() { 
+    class C0 c;
+    float [] floatArray;
+    floatArray = new float[10];
+    c = new C0();
+    c.id2(1, 2);
+    c.id2(floatArray, 2); // error： float <-> floatArray
+    return 0;
+}
+
+public class C0 {
+    int id;
+
+    public int id2(float a, int b){
+        return 0;
+    }
+}

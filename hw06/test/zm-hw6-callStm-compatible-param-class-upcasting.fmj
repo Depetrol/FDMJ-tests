@@ -1,0 +1,20 @@
+public int main() { 
+    class C0 c;
+    class C1 c1;
+    c = new C0();
+    int i = 0;
+    c.id2(new C0(), 1);
+    c.id2(new C1(), i); // normal upcasting
+    return 0;
+}
+
+public class C0 {
+    int id;
+
+    public int id2(class C0 a, int b){
+        return 0;
+    }
+}
+
+public class C1 extends C0 {
+}
