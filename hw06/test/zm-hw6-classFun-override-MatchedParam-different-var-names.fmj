@@ -1,0 +1,13 @@
+public int main() { }
+
+public class C0  {
+    public class C0 id(int a, float b, int [] c, float [] d, class C0 e, class C1 f){
+        return new C0();
+    }
+}
+
+public class C1 extends C0{
+    public class C0 id(int a1, float b1, int [] c1, float [] d1, class C0 e1, class C1 f1){ // normal 参数名字不一致
+        return new C0();
+    }
+}
