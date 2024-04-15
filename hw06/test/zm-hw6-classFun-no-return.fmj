@@ -1,0 +1,12 @@
+public int main() { }
+
+public class C0 {
+    int id;
+
+    public int id(){
+        return 0;
+    }
+
+    public int id2(){ 
+    } // normal
+}
