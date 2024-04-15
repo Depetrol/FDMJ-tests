@@ -1,0 +1,4 @@
+public int main() {
+    this.i1 = 0;  // error
+    return 0;
+}
