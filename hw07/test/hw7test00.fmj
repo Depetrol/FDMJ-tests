@@ -1,0 +1,7 @@
+public int main() {
+    int a = 0;
+    float j = 0.3;
+    a=-j;
+    putnum(j+1);
+    return j*3+2;
+}

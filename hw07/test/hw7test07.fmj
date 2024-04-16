@@ -1,0 +1,5 @@
+public int main () { 
+  int a=1; int b=0;
+  while (a) {while (b) break; break;}
+  return a;
+}
