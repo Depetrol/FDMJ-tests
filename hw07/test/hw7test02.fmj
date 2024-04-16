@@ -1,0 +1,10 @@
+public int main () { 
+  int a; int b; int c;
+  starttime();
+  b=true;
+  if (b) a=3; else {a=2; b=0;} 
+  while (({a=a+1; a=a;}a)<10) if (b) a=3;
+  putnum(a); 
+  stoptime(); 
+  return a*0.3;
+}

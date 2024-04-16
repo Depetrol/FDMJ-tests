@@ -1,0 +1,5 @@
+public int main () { 
+  int a=1; int b=2; int c=3;
+  a=((a<b||({b=1;}b))+b>10)+(a>b)+({if (a>b) a=b;}a);
+  return a;
+}
