@@ -1,0 +1,8 @@
+public int main(){
+    int[] a = {2, 1};
+    float[] b = {1, 2};
+    putnum(3);
+    putnum(1.1);
+    putnum(a[1]);
+    putnum(b[a[0]]);
+}

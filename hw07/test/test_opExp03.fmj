@@ -1,0 +1,8 @@
+public int main(){
+    int a;
+    int b;
+    if(a > b || b < a){
+        return a;
+    }
+    return b;
+}

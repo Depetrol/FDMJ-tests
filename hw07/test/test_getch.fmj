@@ -1,0 +1,10 @@
+public int main(){
+    int a;
+    int b;
+    float c;
+    a = getch();
+    b = getch();
+    new int[3][1] = getch();
+    c = getch();
+    new float[getch()][getch()] = getch();
+}

@@ -1,0 +1,7 @@
+public int main(){
+    int a;
+    float b;
+    a = 3;
+    b = 2;
+    return 0;
+}

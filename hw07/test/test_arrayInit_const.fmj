@@ -1,0 +1,4 @@
+public int main(){
+    float[] a;
+    a[] = {1, 2, 3, 4.4, 5};
+}
