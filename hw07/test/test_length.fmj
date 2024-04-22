@@ -1,0 +1,9 @@
+public int main(){
+    int a = 1;
+    int[] b = {2};
+    float[] c = {1, 2};
+    a = length(b);
+    a = length(c);
+    a = length(new int[4]);
+    return length(new float[2]);
+}

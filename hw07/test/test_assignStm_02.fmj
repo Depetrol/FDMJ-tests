@@ -1,0 +1,7 @@
+public int main(){
+    float a = 2.1;
+    if(a > 1){
+        a = 200;
+    }
+    return 100;
+}

@@ -1,0 +1,5 @@
+public int main(){
+    int a;
+    a = getarray(new float[3]);
+    putarray(3, new int[5]);
+}

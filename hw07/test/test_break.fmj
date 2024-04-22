@@ -1,0 +1,9 @@
+public int main(){
+    while(1){
+        break;
+    }
+    while(1){
+        while(({break;}2));
+        break;
+    }
+}

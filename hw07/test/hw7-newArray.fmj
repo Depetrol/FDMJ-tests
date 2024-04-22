@@ -1,0 +1,10 @@
+public int main() {
+    int[] a; 
+    float[] b;
+    int c = 3;
+    a = new int[5];
+    b = new float[c];
+    putarray(2, a);
+    putarray(c, b);
+}
+

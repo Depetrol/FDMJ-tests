@@ -1,0 +1,7 @@
+public int main(){
+    int a;
+    int b;
+    float c;
+    while(({a=1;b=2;c=({c=2.1;}c-1);}!2));
+    return 1;
+}

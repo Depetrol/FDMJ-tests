@@ -1,0 +1,12 @@
+public int main(){
+    int a;
+    int b;
+    int c;
+    float d;
+    a = true;
+    b = false;
+    d = !true;
+    a = b + 1;
+    c = 100;
+    return 200 + true;
+}

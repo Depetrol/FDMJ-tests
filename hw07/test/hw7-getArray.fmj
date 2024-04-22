@@ -1,0 +1,13 @@
+public int main() {
+    int[] a; 
+    float[] b;
+    int c = 1;
+    int d;
+    d = getarray(a);
+    c = getarray(b);
+    
+    putarray(2, a);
+    putarray(c, b);
+    
+}
+

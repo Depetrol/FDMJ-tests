@@ -1,0 +1,15 @@
+public int main() {
+    int[] a; 
+    float[] b;
+    int c = 1;
+    a[] = {1, 2.2, c};
+    b[] = {c, 1.2};
+    a[0] = 0;
+    a[c] = 1;
+    a[1.1] = 2;
+    b[1] = 1.1;
+    b[2] = 2.2;
+    putnum(length(a));
+    putnum(length(b));
+}
+
