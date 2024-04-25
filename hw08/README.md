@@ -2,7 +2,11 @@
 
 使用方式：
 - 复制Makefile
-- 将tools/main.c的freopen(file_irp, "a", stdout);注释掉
+- 注释掉main.c主函数的while循环，在循环外添加以下两句：
+```c
+printIRP_set(IRP_parentheses);
+printIRP_FuncDeclList(stderr, fdl);
+```
 - make test_external
 - make clean_external
 
@@ -10,7 +14,7 @@
 
 ## makefile添加内容
 
-FDMJ主仓库hw7的 makefile 中添加如下内容：
+FDMJ主仓库hw8的 makefile 中添加如下内容：
 
 ```makefile
 TEST_EXTERNAL_DIR=../../FDMJ-tests
