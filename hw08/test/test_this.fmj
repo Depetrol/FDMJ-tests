@@ -1,0 +1,49 @@
+public int main(){
+    class c1 c;
+    class c2 d;
+    int a;
+    c = new c1();
+    a = c.m1(1);
+    c = new c3();
+    a = c.m2(c.b);
+    a = c.m1(d.a);
+    return d.m3();
+}
+
+
+public class c1 {
+    int a = 1;
+    int b = 2;
+    public int m1(int a){
+        return this.a + a;
+    }
+
+    public int m2(int b){
+        return this.b + b;
+    }
+}
+
+public class c2 {
+    int a = 3;
+    int b = 4;
+    
+    public int m1(){
+        return this.a;
+    }
+
+    public int m3(){
+        return this.b;
+    }
+}
+
+public class c3 extends c1 {
+    int e = 5;
+    int f = 6;
+    public int m1(int a){
+        return this.a + this.b + a;
+    }
+
+    public int m4(){
+        return this.b + this.e;
+    }
+}
