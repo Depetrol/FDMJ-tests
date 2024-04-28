@@ -1,0 +1,11 @@
+public int main(){
+    int a;
+    class c1 b;
+    return ({a = a + 1;} b).m1();
+}
+
+public class c1 {
+    public int m1(){
+        return 1;
+    }
+}
