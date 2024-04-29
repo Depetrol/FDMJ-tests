@@ -1,0 +1,51 @@
+public int main(){
+    class c1 c;
+    class c2 d;
+    class c3 e;
+    d = c.m1();
+    c = d.m1();
+    e = e.m3();
+    c.m1();
+    c.m2();
+    d.m1();
+    e.m1();
+    e.m2();
+    e.m3();
+    c = d.c;
+    d = c.c;
+    e = new c3();
+    c = new c3().m3();
+    c = new c3().m2();
+    d = new c1().m1();
+    c = new c2().m1();
+    e = new c3().m3();
+    new c3().m3();
+    new c3().m2();
+    new c1().m1();
+    new c2().m1();
+    new c3().m3();
+}
+
+public class c1{
+    class c2 c;
+    public class c2 m1(){
+        return this.c;
+    }
+
+    public class c1 m2(){
+        return this.m1().m1();
+    }
+}
+
+public class c2{
+    class c1 c;
+    public class c1 m1(){
+        return new c3();
+    }
+}
+
+public class c3 extends c1{
+    public class c3 m3(){
+        return this;
+    }
+}

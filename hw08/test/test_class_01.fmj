@@ -1,0 +1,32 @@
+public int main(){
+    int a;
+    class c1 c;
+    class c2 d;
+    class c3 e;
+    a = c.a;
+    a = c.b;
+
+    a = d.a;
+    a = d.b;
+
+    a = e.a;
+    a = e.b;
+    a = e.e;
+    a = e.f;
+}
+
+
+public class c1 {
+    int a = 1;
+    int b = 2;
+}
+
+public class c2 {
+    int a = 3;
+    int b = 4;
+}
+
+public class c3 extends c1 {
+    int e = 5;
+    int f = 6;
+}

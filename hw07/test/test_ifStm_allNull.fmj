@@ -1,6 +1,6 @@
 public int main(){
     if(1){
-        starttime();
+
     } else {
         
     }
