@@ -1,0 +1,7 @@
+public int main(){
+    int a = 10;
+    int[] b;
+    int[] c;
+    b = new int[a];
+    c = new int[5];
+}

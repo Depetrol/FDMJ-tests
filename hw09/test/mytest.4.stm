@@ -1,0 +1,100 @@
+------Original IR Tree------
+T_FuncDecl(String("main"),
+  NULL,
+  T_Seq(
+    T_Move(
+      T_Mem(
+        T_Temp(Temp_namedtemp(100,T_int))/*T_int*/
+      , T_float)/*T_float*/,
+      T_Cast(
+        T_IntConst(1)/*T_int*/
+      ,T_float)/*T_float*/
+    ),
+    T_Seq(
+      T_Move(
+        T_Mem(
+          T_Temp(Temp_namedtemp(101,T_int))/*T_int*/
+        , T_int)/*T_int*/,
+        T_IntConst(1)/*T_int*/
+      ),
+      T_Return(
+        T_IntConst(0)/*T_int*/
+      )
+    )
+  ), T_int
+)
+
+------Linearized IR Tree------
+  Move Mem(t100:int):float,   Cast(1:int):float
+  Move Mem(t101:int):int, 1:int
+  Return 0:int
+
+
+------Basic Blocks------
+For Label=C1
+  T_StmList(
+  T_Label(Temp_namedlabel(String("C1"))),
+  T_StmList(
+  T_Move(
+    T_Mem(
+      T_Temp(Temp_namedtemp(100,T_int))/*T_int*/
+    , T_float)/*T_float*/,
+    T_Cast(
+      T_IntConst(1)/*T_int*/
+    ,T_float)/*T_float*/
+  ),
+  T_StmList(
+  T_Move(
+    T_Mem(
+      T_Temp(Temp_namedtemp(101,T_int))/*T_int*/
+    , T_int)/*T_int*/,
+    T_IntConst(1)/*T_int*/
+  ),
+  T_StmList(
+  T_Return(
+    T_IntConst(0)/*T_int*/
+  )  , NULL)
+  )
+  )
+  )
+
+------Original IR Tree------
+T_FuncDecl(String("main"),
+  NULL,
+  T_Seq(
+    T_Move(
+      T_Mem(
+        T_Temp(Temp_namedtemp(100,T_int))/*T_int*/
+      , T_float)/*T_float*/,
+      T_Cast(
+        T_IntConst(1)/*T_int*/
+      ,T_float)/*T_float*/
+    ),
+    T_Seq(
+      T_Move(
+        T_Mem(
+          T_Temp(Temp_namedtemp(101,T_int))/*T_int*/
+        , T_int)/*T_int*/,
+        T_IntConst(1)/*T_int*/
+      ),
+      T_Return(
+        T_IntConst(0)/*T_int*/
+      )
+    )
+  ), T_int
+)
+
+------Linearized IR Tree------
+  Move Mem(t100:int):float,   Cast(1:int):float
+  Move Mem(t101:int):int, 1:int
+  Return 0:int
+
+
+------Basic Blocks------
+For Label=C1
+ C1:
+  Move Mem(t100:int):float,   Cast(1:int):float
+  Move Mem(t101:int):int, 1:int
+  Return 0:int
+
+
