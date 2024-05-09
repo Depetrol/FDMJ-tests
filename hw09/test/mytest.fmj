@@ -1,9 +1,7 @@
 public int main(){
-    float[] a;
+    int a;
     int[] b;
-    
-    a[0] = 1;
-    b[0] = 1;
+    a = b[1];
     
     return 0;
 }
