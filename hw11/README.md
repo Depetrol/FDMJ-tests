@@ -1,3 +1,5 @@
+将测试文件（.fmj文件）和期待输出（.ans文件）放在test目录下
+
 ```makefile
 TEST_EXTERNAL_DIR=../../FDMJ-tests
 TEXT_EXTERNAL_HW=hw11
