@@ -1,0 +1,13 @@
+public int main(){
+    int a = 6;
+    if(a < 8){
+        a = a * 2;
+    } else {
+        a = a - 3;
+    }
+    while(a > 9){
+        a = a - 1;
+    }
+    putnum(a);
+    return a;
+}

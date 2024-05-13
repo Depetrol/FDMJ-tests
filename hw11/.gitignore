@@ -1,0 +1,5 @@
+yours/*.txt
+correct/*.txt
+test/myRandomTest*.fmj
+tools/main
+tools/std
