@@ -1,5 +1,6 @@
 public int main() {
   putnum(new c1().x);
+  return 0;
 }
 
 public class c0 {

@@ -5,4 +5,5 @@ public int main(){
         a = a + 1;
         putnum(a);
     }
+    return 0;
 }

@@ -1,4 +1,5 @@
 public int main() {
   while (true) break;
   putnum(false);
+  return 0;
 }
