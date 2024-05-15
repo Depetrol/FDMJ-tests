@@ -1,5 +1,5 @@
 public int main() {
-  putnum((1>2)*new c1().m(1, 2, 3));
+  putnum((1<2)*new c1().m(1, 2, 3));
   return 0;
 }
 

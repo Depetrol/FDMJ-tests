@@ -1,0 +1,21 @@
+public int main(){
+    putnum(new c2().m2().m1());
+    return 0;
+}
+
+public class c1 {
+    int x1 = 2;
+    int x2 = 3;
+
+    public int m1(){
+        return this.x1;
+    }
+}
+
+public class c2 extends c1{
+    int y1 = 4;
+    public class c1 m2(){
+        this.x1 = 5;
+        return this;
+    }
+}
