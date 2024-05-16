@@ -1,0 +1,22 @@
+public int main() {
+    int i = 1;
+    int j = 2;
+    float k = 0;
+    i = 3;
+    while (k<100){
+        if (j<20){
+            j = i;
+            k = k+1;
+        }
+        else{
+            j = k;
+            k=k+2;
+        }
+    }
+    putnum(i);
+    putch(10);
+    putnum(j);
+    putch(10);
+    putnum(k);
+    return 0;
+}

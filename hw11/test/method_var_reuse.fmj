@@ -1,0 +1,38 @@
+public int main(){
+    class c1 c1_obj;
+    class c1 c2_obj;
+    int a1 = 1;
+    int b1 = 2;
+    int c1_result;
+    int c2_result;
+    c1_obj = new c1();
+    c2_obj = new c2();
+    c1_result = c1_obj.m1(a1, b1);
+    c2_result = c2_obj.m1(a1, b1);
+    
+    putnum(c1_result);
+    putch(10);
+    putnum(c2_result);
+    return 0;
+}
+
+
+
+public class c1{
+    int a2 = 1;
+    public int m1(int x, int y){
+        this.a2 = x + y;
+        x = x + y;
+        x = x * 2;
+        return x;
+    }
+}
+
+public class c2 extends c1{
+    public int m1(int x, int y){
+        this.a2 = x - y;
+        x = x - y;
+        x = x * 3;
+        return x;
+    }
+}

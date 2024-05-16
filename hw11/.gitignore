@@ -3,3 +3,9 @@ correct/*.txt
 test/myRandomTest*.fmj
 tools/main
 tools/std
+test/*.irp
+test/*.stm
+test/*.ins
+test/*.cfg
+test/*.ssa
+test/*.ll
