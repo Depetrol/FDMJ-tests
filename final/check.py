@@ -44,11 +44,11 @@ for correct_file in correct_matching_files:
     
     llvm_failed_msg = f"{YELLOW}llvm{RESET}: \n"
     if len(llvm_file_contents) != len(correct_file_contents):
-        passed = False
+        llvm_passed = False
         llvm_failed_msg += f"expect {len(correct_file_contents)} lines. but got {len(llvm_file_contents)} lines.\n"
     
     if diff_lines: 
-        passed = False
+        llvm_passed = False
         for diff_line in diff_lines:
             llvm_failed_msg += f"different at line {diff_line[0]}:\n"
             llvm_failed_msg += f"\texpect: {diff_line[1]}\n"
