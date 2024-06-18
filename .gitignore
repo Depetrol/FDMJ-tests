@@ -4,6 +4,14 @@
 **.output
 *.ast
 *.src
+*.irp
+*.stm
+*.ins
+*.cfg
+*.ssa
+*.arm
+*.s
+*.txt
 .DS_Store
 **/gen_program_*
 bin
