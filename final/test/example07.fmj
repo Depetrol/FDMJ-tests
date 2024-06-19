@@ -1,0 +1,12 @@
+public int main() {
+  putnum(new c1().a); putch(10);
+  putnum(new c1().x); putch(10);
+  return new c1().x;
+}
+
+public class c0 {
+   float a=1.1;
+}
+public class c1 extends c0 {
+   float x=1.2;
+}

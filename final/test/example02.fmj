@@ -1,0 +1,8 @@
+public int main() {
+  int[] b={0,1,2,3};
+  int a = 20;
+  a = length(b);
+  putarray(a, b);
+  putnum(a);putch(10);
+  return 0;
+}

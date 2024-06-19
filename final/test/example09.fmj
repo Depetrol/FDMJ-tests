@@ -1,0 +1,17 @@
+public int main() {
+  putnum((1<2)*new c1().m(1, 2, 3));
+  return (1>2)*new c1().m(1, 2, 3);
+}
+
+public class c0 {
+   float a=10.0;
+   public float m(int b, int c, float d) {
+      return d;
+   }
+}
+public class c1 extends c0 {
+   float x=2;
+   public float m(int x, int y, float z) {
+      return this.a+z;
+   }
+}

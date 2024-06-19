@@ -1,0 +1,10 @@
+public int main() {
+  putnum(new c().m(1.2));
+  return new c().m(1);
+}
+
+public class c {
+   public float m(float a) {
+      return a;
+   }
+}

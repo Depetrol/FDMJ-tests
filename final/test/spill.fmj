@@ -1,0 +1,41 @@
+public int main() {
+  int a = 0;
+  int b1;
+  int b2;
+  int b3;
+  int b4;
+  int b5;
+  int b6;
+  int b7;
+  int b8;
+  int b9;
+  int sum;
+  b1=a+1;
+  b2=a+2;
+  b3=a+3;
+  b4=a+4;
+  b5=a+5;
+  b6=a+6;
+  b7=a+7;
+  b8=a+8;
+  b9=a+9;
+  putnum(b1);putch(10);
+  putnum(b5);putch(10);
+  sum = b1 + b5;
+  putnum(sum);putch(10);
+  putch(10);
+
+  putnum(b1);putch(10);
+  putnum(b2);putch(10);
+  putnum(b3);putch(10);
+  putnum(b4);putch(10);
+  putnum(b5);putch(10);
+  putnum(b6);putch(10);
+  putnum(b7);putch(10);
+  putnum(b8);putch(10);
+  putnum(b9);putch(10);
+
+  // putnum(sum);putch(10);
+  putch(10);
+  return 0;
+}

@@ -1,0 +1,8 @@
+public int main() {
+  putnum(new c1().x);
+  return new c1().x;
+}
+
+public class c1 {
+   float x=1.3;
+}

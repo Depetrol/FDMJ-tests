@@ -1,0 +1,20 @@
+public int main() {
+  putnum(new c().m(1)); putch(10);
+  putnum(new c1().m1(2,3));
+  return new c().m(1);
+}
+
+public class c {
+   public float m(float a) {
+      return a;
+   }
+}
+
+public class c1 extends c {
+   int [] x;
+   public int m1(float a, int b) {
+      int y;
+      y=(a>b);
+      return new c().m(1);
+   }
+}

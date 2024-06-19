@@ -1,0 +1,4 @@
+public int main() {
+  putnum((true*1.9)); putch(10);
+  return !(true*1.9);
+}

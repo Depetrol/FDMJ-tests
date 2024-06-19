@@ -1,0 +1,7 @@
+public int main() {
+  int[] b;
+  float x=1.1;
+  b[]={x,2};
+  putnum(b[0]); putch(10);
+  putnum(b[1]); putch(10);
+}

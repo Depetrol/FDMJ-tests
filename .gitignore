@@ -12,6 +12,7 @@
 *.arm
 *.s
 *.txt
+**/tools/**
 .DS_Store
 **/gen_program_*
 bin

@@ -1,0 +1,9 @@
+public int main() {
+    int[] a = {1111, 2222};
+    if(a[0] < a[1]){
+        putnum(12); putch(10);
+    }
+    else {
+        putnum(21); putch(10);
+    }
+}

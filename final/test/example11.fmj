@@ -1,0 +1,7 @@
+public int main() {
+  float[] b={9};
+  b[0]=(!b[0]);
+  b[0]=(!b[0]);
+  putnum(b[0]);
+  return length(b);
+}
